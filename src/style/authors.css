@@ -1,0 +1,115 @@
+    .section__authors {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 70px;
+        padding: 0 20px;
+    }
+    
+    .section__authors-item {
+        display: flex;
+        padding: 22px 40px;
+        /* flex-direction: column; */
+        border: 0.5px solid rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        border-radius: 25px;
+        align-items: center;
+    }
+    
+    .section__authors-item:hover {
+        transform: scale(1.05);
+    }
+    
+    .authors-item__img {
+        width: 210px;
+        height: 210px;
+        border-radius: 25px;
+        margin-right: 30px;
+    }
+    
+    .authors-item__name {
+        /* text-align: center; */
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 32px;
+    }
+    
+    .authors-item__description {
+        color: #7D7987;
+        font-weight: normal;
+        font-size: 15px;
+        /* line-height: 32px; */
+        /* text-align: center; */
+    }
+    
+    .authors-item__text-block {}
+    
+    @media (max-width: 1280px) {
+        .arrow-icon {
+            width: 30px;
+            height: 30px;
+        }
+        .section__authors {
+            margin: 0;
+            grid-gap: 30px;
+        }
+        .section__authors-item {
+            padding: 12px 20px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .section__authors {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .section__authors {
+            flex-direction: column;
+            padding: 10px 0;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .authors-item__img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .authors-item__name {
+            font-size: 20px;
+        }
+        .authors-item__description {
+            font-size: 12px;
+        }
+        .section__authors-item {
+            padding: 5px 10px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .section__authors-item {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .authors-item__img {
+            margin-right: 0;
+        }
+        .authors-item__text-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .authors-item__name {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .authors-item__description {
+            text-align: center;
+        }
+    }

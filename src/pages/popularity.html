@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/books.svg" type="image/x-icon">
+    <title>Books - Популярное</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navigation">
+                <div class="logo-block" onclick="window.location='../index.html'">
+                    <img src="../img/books.svg" class="logo-block__icon">
+                    <h3 class="logo-block__name">Books</h3>
+                </div>
+                <div class="burger-button">
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item"><a href="../index.html" class="menu__item-link">Главная</a></li>
+                    <li class="menu__item menu__item-selected"><a href="popularity.html" class="menu__item-link">Популярное</a></li>
+                    <li class="menu__item"><a href="catalogy.html" class="menu__item-link">Каталог</a></li>
+                    <li class="menu__item"><a href="authors.html" class="menu__item-link">Авторы</a></li>
+                    <li class="menu__item"><a href="genres.html" class="menu__item-link">Жанры</a></li>
+                    <li class="menu__item"><a href="feedback.html" class="menu__item-link">Обратная связь</a></li>
+                    <li class="menu__item"><a href="title.html" class="menu__item-link">Титульный лист</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main class="section">
+            <h1 class="section__title">Бестселлеры</h1>
+            <div class="section__block section__popularity">
+                <img id="left-arrow" src="../img/left-arrow.svg" class="arrow-icon">
+                <div class="popularity-block">
+                    <ul class="popularity-block__list">
+                        <li class="popularity-block__item">
+                            <div class="popularity-block__item-mark">BEST</div>
+
+                            <img class="popularity-block__item-img">
+                            <h4 class="popularity-block__item-name"></h4>
+                            <p class="popularity-block__item-description"></p>
+                        </li>
+                    </ul>
+                </div>
+                <img id="right-arrow" src="../img/right-arrow.svg" type="image/svg+xml" class="arrow-icon">
+            </div>
+        </main>
+    </div>
+    <script src="../scripts/menu.js"></script>
+
+    <script src="../scripts/catalogy-data/Book.js"></script>
+    <script src="../scripts/popularity-data/data.js"></script>
+    <script src="../scripts/slider.js"></script>
+    <script src="../scripts/popularity-data/popularity.js"></script>
+</body>
+
+</html>

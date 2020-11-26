@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/books.svg" type="image/x-icon">
+    <title>Books - Обратная связь</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navigation">
+                <div class="logo-block" onclick="window.location='index.html'">
+                    <object data="../img/books.svg" type="image/svg+xml" class="logo-block__icon"></object>
+                    <h3 class="logo-block__name">Books</h3>
+                </div>
+                <div class="burger-button">
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item"><a href="../index.html" class="menu__item-link">Главная</a></li>
+                    <li class="menu__item"><a href="popularity.html" class="menu__item-link">Популярное</a></li>
+                    <li class="menu__item"><a href="catalogy.html" class="menu__item-link">Каталог</a></li>
+                    <li class="menu__item"><a href="authors.html" class="menu__item-link">Авторы</a></li>
+                    <li class="menu__item"><a href="genres.html" class="menu__item-link">Жанры</a></li>
+                    <li class="menu__item menu__item-selected"><a href="feedback.html" class="menu__item-link">Обратная связь</a></li>
+                    <li class="menu__item"><a href="title.html" class="menu__item-link">Титульный лист</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="feedback">
+                <h1 class="feedback__title">Задайте вопрос!</h1>
+                <form class="feedback__form" action="http://httpbin.org/get" method="GET" enctype="text/plain">
+                    <div class="feedback__box">
+                        <label class="feedback__label" for="name">Ваше имя:
+                        <input class="feedback__input" type="text" name="name" id="name" />
+                      </label>
+                    </div>
+                    <div class="feedback__box">
+                        <label class="feedback__label" for="email">E-mail:
+                        <input class="feedback__input" type="email" name="email" id="email" />
+                      </label>
+                    </div>
+                    <div class="feedback__box">
+                        <label class="feedback__label">Сообщение:</label>
+                        <!-- <br /> -->
+                        <textarea class="feedback__textarea" name="comments" rows="3" cols="35" placeholder="Введите сообщение..."></textarea>
+                    </div>
+                    <div class="feedback__box">
+                        <input class="feedback__button" type="submit" name="submit" value="Отправить" />
+                        <input class="feedback__button" type="reset" name="reset" value="Очистить" />
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="../scripts/menu.js"></script>
+
+</body>
+
+</html>

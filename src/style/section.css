@@ -1,0 +1,125 @@
+.section {}
+
+.section__block {
+    display: flex;
+    align-items: flex-end;
+}
+
+.arrow-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.arrow-icon:hover {
+    transform: scale(1.1);
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section__catalogy {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.section__catalogy-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__catalogy-item:hover {
+    transform: scale(1.1);
+    /* border: 2px solid black; */
+}
+
+.catalogy-item__img {
+    width: 161.99px;
+    height: 210px;
+    align-self: center;
+}
+
+.catalogy-item__name {
+    font-style: normal;
+    font-weight: semi-bold;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .section__catalogy {
+        padding: 0;
+        margin: 0;
+    }
+    .catalogy-item__img {
+        width: 120px;
+        height: 182px;
+    }
+    .section__block {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .arrow-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .section__title {
+        margin-bottom: 20px;
+    }
+    .section__catalogy {
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section__catalogy {
+        margin-top: 7px;
+    }
+    .catalogy-item__name {
+        font-size: 15px;
+    }
+    .section__catalogy {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .catalogy-item__img {
+        width: 161.99px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section__title {
+        margin-bottom: 10px;
+    }
+    .catalogy-item__img {
+        width: 120px;
+        height: 182px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section__catalogy {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 320px) {
+    .section__catalogy {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+}

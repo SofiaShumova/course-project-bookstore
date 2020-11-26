@@ -1,0 +1,125 @@
+.main {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.main__text-block {
+    width: 50%;
+}
+
+.main__title {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.main__text {
+    font-weight: normal;
+    font-size: 21px;
+    color: #7D7987;
+}
+
+.main__button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #49AAB4;
+    border-radius: 55px;
+    padding: 30px 45px 30px 60px;
+    border: none;
+    display: flex;
+    align-items: center;
+    letter-spacing: .02rem;
+    margin-top: 56px;
+    outline: none;
+    border: none;
+}
+
+.main__link {
+    text-decoration: none;
+}
+
+.main__button:hover {
+    background: #367b83;
+}
+
+.main__button-arrow {
+    margin-left: 10px;
+}
+
+.main__image {
+    width: 50%;
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+    .main {
+        margin-top: 50px;
+    }
+    .main__button {
+        padding: 20px 35px 20px 50px;
+        margin-top: 46px;
+    }
+    .main__title {
+        font-size: 43px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 600px) {
+    .main__text-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main__image {
+        opacity: 0.5;
+        position: absolute;
+        top: 600px;
+        left: 260px;
+    }
+    .main {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main__image {
+        top: 563px;
+        left: 180px;
+    }
+    .main {
+        margin-top: 0;
+    }
+    .main__text {
+        background: rgba(255, 255, 255, 0.858);
+        z-index: 2;
+        border-radius: 7px;
+    }
+    .main__button {
+        padding: 10px 35px 10px 50px;
+        margin-top: 26px;
+    }
+    .main__title {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main__image {
+        position: static;
+        width: 100%;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .main__text {
+        font-size: 17px;
+    }
+}

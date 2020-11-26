@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/books.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Books - Главная</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navigation">
+                <div class="logo-block" onclick="window.location='index.html'">
+                    <object data="img/books.svg" type="image/svg+xml" class="logo-block__icon"></object>
+                    <h3 class="logo-block__name">Books</h3>
+                </div>
+                <div class="burger-button">
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item menu__item-selected"><a href="index.html" class="menu__item-link">Главная</a></li>
+                    <li class="menu__item"><a href="pages/popularity.html" class="menu__item-link">Популярное</a></li>
+                    <li class="menu__item"><a href="pages/catalogy.html" class="menu__item-link">Каталог</a></li>
+                    <li class="menu__item"><a href="pages/authors.html" class="menu__item-link">Авторы</a></li>
+                    <li class="menu__item"><a href="pages/genres.html" class="menu__item-link">Жанры</a></li>
+                    <li class="menu__item"><a href="pages/feedback.html" class="menu__item-link">Обратная связь</a></li>
+                    <li class="menu__item"><a href="pages/title.html" class="menu__item-link">Титульный лист</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__text-block">
+                <h1 class="main__title">Books - читайте любимые книги в одном месте</h1>
+                <p class="main__text">Удобная онлайн библиотека в электронном <br/>виде на вашем компьютере, смартфоне, планшете, ноутбуке </p>
+                <a class="main__link" href="./pages/catalogy.html">
+                    <button class="main__button">
+                        Перейти к каталогу
+                        <object data="img/arrow-main.svg" type="image/svg+xml" class="main__button-arrow"></object>
+                    </button>
+                </a>
+            </div>
+            <object data="img/main-image.svg" type="image/svg+xml" class="main__image"></object>
+        </main>
+    </div>
+    <script src="./scripts/menu.js"></script>
+</body>
+
+</html>

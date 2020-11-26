@@ -1,0 +1,69 @@
+.section__title {}
+
+.title__header-title {
+    margin-bottom: 50px;
+}
+
+.title__header-cafedra {
+    margin-bottom: 150px;
+    color: #49AAB4;
+}
+
+.title__header-work {}
+
+.title__header-theme {
+    font-size: 30px;
+    margin-bottom: 300px;
+}
+
+.title__header-teacher {
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 200px;
+}
+
+.title__header-date {
+    font-size: 20px;
+}
+
+.title__header-task {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+    .title__header-title,
+    .title__header-cafedra,
+    .title__header-theme,
+    .title__header-teacher {
+        margin-bottom: 80px;
+    }
+    .title__header-teacher {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .title__header-title,
+    .title__header-cafedra,
+    .title__header-theme,
+    .title__header-teacher {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {
+    .section__title.title,
+    .title__header-date {
+        font-size: 10px;
+    }
+    .title__header-title,
+    .title__header-cafedra,
+    .title__header-theme,
+    .title__header-teacher {
+        margin-bottom: 30px;
+    }
+}
