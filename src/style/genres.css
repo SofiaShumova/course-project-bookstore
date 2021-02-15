@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     width: 1000px;
-    height: 210px;
+    /* height: 210px; */
     overflow-x: visible;
     list-style-type: none;
     overflow-y: hidden;

@@ -1,5 +1,6 @@
 .section__popularity {
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-end;
 }
 
 .popularity-block {}
